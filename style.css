@@ -427,3 +427,95 @@ h3 { line-height: 1.2; }
   .footer-bottom { flex-direction: column; }
   .organization-links { flex-direction: column; gap: 12px; }
 }
+/* =====================================================
+   FIX HEADER LOGO & BRAND UNTUK MOBILE
+   ===================================================== */
+
+.site-header .nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .brand {
+  display: flex !important;
+  align-items: center;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .brand-logos {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .brand-logo {
+  display: block !important;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .brand-logo-forkom {
+  display: block !important;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .brand-text {
+  display: flex !important;
+  flex-direction: column;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .brand-text strong,
+.site-header .brand-text span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 560px) {
+  .site-header .brand {
+    display: flex !important;
+    max-width: calc(100% - 60px);
+  }
+
+  .site-header .brand-logos {
+    display: flex !important;
+  }
+
+  .site-header .brand-text {
+    display: flex !important;
+  }
+
+  .site-header .brand-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .site-header .brand-logo-forkom {
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-header .brand-text strong {
+    font-size: .75rem;
+  }
+
+  .site-header .brand-text span {
+    font-size: .52rem;
+  }
+}
